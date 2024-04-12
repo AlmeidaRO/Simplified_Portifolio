@@ -3,180 +3,418 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rodrigo de Oliveira Almeida - Desenvolvedor Full Stack</title>
-
-    <!-- links -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicons@v2.14.0/devicon.min.css"/>
-
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/responsivo.css">
-
-
+    <title >&#128300 Rodrigo de Oliveira Almeida</title>
 </head>
+
+
+
+<!-- links -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicons@v2.14.0/devicon.min.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+
+<!-- reset/style/responsive-->
+<link rel="stylesheet" href="./src/css/reset.css">
+<link rel="stylesheet" href="./src/css/style.css">
+<link rel="stylesheet" href="./src/css/responsive.css">
+
 <body>
-    <header class="cabecalho">
-        <a href="#">
-            <h1 class="logo">ROA</h1>
+    <!-- Header -->
+    <header class="main-header">
+        <a href="#top">
+            <h1 class="logo1" >
+                &#127808
+            </h1>
         </a>
-        
         <nav class="menu">
             <ul>
                 <li>
-                    <a href="#projetos">Meus projetos</a>
+                    <a href="#statistical-analysis-projects">
+                        Statistical Analysis Projects
+                    </a>
+                </li>
+                <li>
+                    <a href="#machine-learning-projects">
+                        Machine Learning Projects 
+                    </a>
+                </li>
+                <li>
+                    <a href="#webdev-projects">
+                        WebDev Projects
+                    </a>
                 </li>
             </ul>
         </nav>
     </header>
-    
+
+    <!-- Home -->
     <section class="home">
-        <div class="informacoes">
-            <!-- texto base -->
+        <!-- Info and contact -->
+        <div class="general-informations">
+            <!-- General text -->
             <h1>
                 Hello! I'm Rodrigo.
             </h1>
             <p>
-                A beginner full stack developer and PhD. in biotechnology. 
+                A beginner full stack developer and PhD in biotechnology.
             </p>
             <p>
                 Always developing projects about machine learning applications, statistical analysis, devices based in arduino and other tools. 
             </p>
             <p>
-                I also like biology/chemistry wet-lab experiments, movies, pets and walk around and appreciate the nature. 
+                I also like wet-lab experiments 🧬 🧪 🥼
             </p>
 
-            <!-- canais de contato -->
-            <ul class="redes-sociais">
+            <!-- Social media -->
+            <ul class="social-media">
                 <li>
-                    <a href="https://www.linkedin.com/in/rodrigo-de-oliveira-almeida-b9b1291aa" title="Ir para LinkedIn" target="_blank">
+                    <a href="https://www.linkedin.com/in/rodrigo-de-oliveira-almeida-b9b1291aa" title="Go to LinkedIn" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
-                
+
                 <li>
-                    <a href="https://wa.me/5532991227340" title="Enviar mensagem via Whatsapp" target="_blank">
-                        <i class="fab fa-whatsapp"></i>
+                    <a href="https://orcid.org/0000-0002-7444-0864" title="Go to Orcid" target="_blank">
+                        <i class="fab fa-orcid"></i>
                     </a>
                 </li>
-                    
+
                 <li>
-                    <a href="https://github.com/AlmeidaRO" title="Ir para GitHub" target="_blank">
+                    <a href="https://github.com/AlmeidaRO" title="Go to GitHub" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
                 </li>
-                    
+
                 <li>
-                    <a href="https://orcid.org/0000-0002-7444-0864" title="Ir para Orcid" target="_blank">
-                        <i class="fab fa-orcid"></i>
+                    <a href="https://wa.me/5532991227340" title="Send message" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
                     </a>
                 </li>
             </ul>
         </div>
 
-        <div class="container-foto">
-            <div class="foto sombra-interna">
-                <img src="./src/imagens/almeidaro2_no_bg.png" width="400" height="400" alt="foto do portifolio de Rodrigo">
+        <!-- my picture -->
+        <div class="container-my-picture">
+            <div class="shadow my-picture">
+                <img src="./src/images/almeidaro2_no_bg.png" alt="picture of rodrigo">
             </div>
         </div>
     </section>
 
+    <!-- Statistical Analysis Projects -->
+    <section class="statistical-analysis-projects" id="statistical-analysis-projects">
+        <div class="title-top-sap">
+            <h2 class="title-sap">
+                Statistical Analysis Projects
+            </h2>
+            <a href="#top">
+                <h1 class="top" >
+                    back
+                </h1>
+            </a>
+        </div>
+        <div class="container-sap">
+
+            <!-- Project 1 -->
+            <div class="project active">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/statistical_analysis_anova_crd" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="ANOVA CRD">
+                    <h3>ANOVA Ex1</h3>
     
-    <section class="projetos" id="projetos">
-        <h2 class="titulo">Meus projetos</h2>
-
-        <div class="container-projetos">
-
-            <!-- Projeto 1 -->
-            <div class="projeto ativo">
-                <a href="https://github.com/AlmeidaRO/Projects/tree/main/projeto-teste1" target="_blank">
-                    <img src="./src/imagens/p3.png" alt="Projeto Landing page teste1">
-                    <h3>Projeto teste1</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto teste1 usando HTML, CSS e JS</p>
-                        <p>Ver no GitHub Pages</p>
+                    <div class="project-information-sap">
+                        <p>
+                            ANOVA - CRD using R Shiny and ExpDes library.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project active">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/statistical_analysis_anova_fat2_crd" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="ANOVA Double Factorial Scheme in CRD">
+                    <h3>ANOVA Ex2</h3>
+    
+                    <div class="project-information-sap">
+                        <p>
+                            ANOVA - Double Factorial Scheme in CRD using R Shiny and ExpDes library.
+                        </p>
                     </div>
                 </a>
             </div>
 
-            <!-- Projeto 2 -->
-            <div class="projeto ativo">
-                <a href="https://github.com/AlmeidaRO/Projects/tree/main/projeto-teste1" target="_blank">
-                    <img src="./src/imagens/p1.png" alt="Projeto Landing page teste2">
-                    <h3>Projeto teste2</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto teste2 usando HTML, CSS e JS</p>
-                        <p>Ver no GitHub Pages</p>
+            <!-- Project 3 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/statistical_analysis_anova_fat3_crd" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="ANOVA Triple Factorial Scheme in CRD">
+                    <h3>ANOVA Ex3</h3>
+    
+                    <div class="project-information-sap">
+                        <p>
+                            ANOVA -  Triple Factorial Scheme in CRD using R Shiny and ExpDes library.
+                        </p>
                     </div>
                 </a>
             </div>
 
-            <!-- Projeto 3 -->
-            <div class="projeto ativo">
-                <a href="https://github.com/AlmeidaRO/Projects/tree/main/projeto-teste1" target="_blank">
-                    <img src="./src/imagens/p1.png" alt="Projeto Landing page teste1">
-                    <h3>Projeto teste3</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto teste3 usando HTML, CSS e JS</p>
-                        <p>Ver no GitHub Pages</p>
+            <!-- Project 4 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/statistical_analysis_anova_rbd" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="ANOVA RBD">
+                    <h3>ANOVA Ex4</h3>
+    
+                    <div class="project-information-sap">
+                        <p>
+                            ANOVA - RBD using R Shiny and ExpDes library.
+                        </p>
                     </div>
                 </a>
             </div>
 
-            <!-- Projeto 4 -->
-            <div class="projeto ativo">
-                <a href="https://github.com/AlmeidaRO/Projects/tree/main/projeto-teste1" target="_blank">
-                    <img src="./src/imagens/p3.png" alt="Projeto Landing page teste1">
-                    <h3>Projeto teste4</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto teste4 usando HTML, CSS e JS</p>
-                        <p>Ver no GitHub Pages</p>
+            <!-- Project 5 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/statistical_analysis_anova_fat2_rbd" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="ANOVA Double Factorial Scheme in RBD">
+                    <h3>ANOVA Ex5</h3>
+    
+                    <div class="project-information-sap">
+                        <p>
+                            ANOVA - Double Factorial Scheme in RBD using R Shiny and ExpDes library.
+                        </p>
                     </div>
                 </a>
             </div>
 
-            <!-- Projeto n... -->
-
-            <!-- Projeto em desenvolvimento -->
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="./src/imagens/p3.png" alt="Capa do projeto">
-                    <h3>Projeto teste5</h3>
-
-                    <div class="informacoes-projeto">
-                        <p>Projeto teste5 usando HTML e Python</p>
-                        <p>Ver no GitHub Pages</p>
+            <!-- Project 6 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/statistical_analysis_anova_fat3_rbd" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="ANOVA Triple Factorial Scheme in RBD">
+                    <h3>ANOVA Ex6</h3>
+    
+                    <div class="project-information-sap">
+                        <p>
+                            ANOVA - Triple Factorial Scheme in RBD using R Shiny and ExpDes library.
+                        </p>
                     </div>
                 </a>
             </div>
 
-            <div class="projeto">
-                <a href="#" target="_blank">
-                    <img src="./src/imagens/p3.png" alt="Capa do projeto">
-                    <h3>Projeto teste6</h3>
+            <!-- Project x -->
+            <!-- Project x -->
+            <!-- Project x -->
+            <!-- Project x -->
+            <!-- Project x -->
+            
+        </div>
 
-                    <div class="informacoes-projeto">
-                        <p>Projeto teste6 usando HTML e Python</p>
-                        <p>Ver no GitHub Pages</p>
+        <div class="container-btn-sap">
+            <button class="btn-sap-show-more">Show more SAP</button>
+
+            <button class="btn-sap-show-less">Show less SAP</button>
+        </div>
+        
+
+    </section>
+
+    <!-- Machine Learning Projects -->
+    <section class="machine-learning-projects" id="machine-learning-projects">
+        <div class="title-top-mlp">
+            <h2 class="title-mlp">
+                Machine Learning Projects
+            </h2>
+            <a href="#top">
+                <h1 class="top" >
+                    back
+                </h1>
+            </a>
+        </div>
+        <div class="container-mlp">
+
+            <!-- Project 1 -->
+            <div class="project active">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/machine_learning_classification_1" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="Classification 1">
+                    <h3>Classification Ex1</h3>
+    
+                    <div class="project-information-mlp">
+                        <p>
+                            Classification using Python, Streamlit and scikit-learning library.
+                        </p>
+                        <p>
+                            Simple models
+                        </p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/machine_learning_classification_2" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="Classification 2">
+                    <h3>Classification Ex2</h3>
+    
+                    <div class="project-information-mlp">
+                        <p>
+                            Classification using Python, Streamlit and scikit-learning library.
+                        </p>
+                        <p>
+                            Tuning models with Optuna
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/machine_learning_classification_3" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="Classification 3">
+                    <h3>Classification Ex3</h3>
+    
+                    <div class="project-information-mlp">
+                        <p>
+                            Classification using Python, Streamlit and scikit-learning library.
+                        </p>
+                        <p>
+                            Combining models
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/machine_learning_regression_1" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="Regression 1">
+                    <h3>Regression Ex1</h3>
+    
+                    <div class="project-information-mlp">
+                        <p>
+                            Regression using Python, Streamlit and scikit-learning library.
+                        </p>
+                        <p>
+                            Simple models
+                        </p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Project 5 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/machine_learning_regression_2" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="Regression 2">
+                    <h3>Regression Ex2</h3>
+    
+                    <div class="project-information-mlp">
+                        <p>
+                            Regression using Python, Streamlit and scikit-learning library.
+                        </p>
+                        <p>
+                            Tuning models with Optuna
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/machine_learning_regression_3" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="Regression 3">
+                    <h3>Regression Ex3</h3>
+    
+                    <div class="project-information-mlp">
+                        <p>
+                            Regression using Python, Streamlit and scikit-learning library.
+                        </p>
+                        <p>
+                            Combining models
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project x -->
+            <!-- Project x -->
+            <!-- Project x -->
+            <!-- Project x -->
+            <!-- Project x -->
+            
+        </div>
+
+        <div class="container-btn-mlp">
+                <button class="btn-mlp-show-more">Show more MLP</button>
+
+                <button class="btn-mlp-show-less">Show less MLP</button>
+        </div>
+
+    </section>
+
+    <!-- WebDev Projects -->
+    <section class="webdev-projects" id="webdev-projects">
+        <div class="title-top-wdp">
+            <h2 class="title-wdp">
+                WebDev Projects
+            </h2>
+            <a href="#top">
+                <h1 class="top" >
+                    back
+                </h1>
+            </a>
+        </div>
+        
+        <div class="container-wdp">
+            <!-- Project 1 -->
+            <div class="project active">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/webdev_white_wolf" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="WebDev White Wolf RPG">
+                    <h3>Withe Wolf RPG</h3>
+    
+                    <div class="project-information-wdp">
+                        <p>
+                            Frontend using HTML, CSS and JS.
+                        </p>
+                        <p>
+                            Role-Play Games from White Wolf
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <a href="https://github.com/AlmeidaRO/Projects_A/tree/main/webdev_lc_discography" target="_blank">
+                    <img src="https://via.placeholder.com/200x300.png" alt="WebDev Lacuna Coil discography">
+                    <h3>Lacuna Coil discography</h3>
+    
+                    <div class="project-information-wdp">
+                        <p>
+                            Frontend using HTML, CSS and JS.
+                        </p>
+                        <p>
+                            Discography
+                        </p>
                     </div>
                 </a>
             </div>
 
         </div>
 
-        <button class="btn-mostrar-projetos">Mostar mais</button>
+        <div class="container-btn-wdp">
+            <button class="btn-wdp-show-more">Show more WDP</button>
+
+            <button class="btn-wdp-show-less">Show less WDP</button>
+        </div>
+        
     </section>
+
+    <!-- Other Sections -->
 
     <script src="./src/js/index.js"></script>
+
 
 </body>
 </html>

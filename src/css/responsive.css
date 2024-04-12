@@ -1,0 +1,571 @@
+
+/* Screen */
+@media(max-width: 1180px){
+    .main-header{
+        padding: 30px;
+    }
+
+    .home{
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0;
+        gap: 30px;
+    }
+
+    .home .general-informations{
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .statistical-analysis-projects .container-sap{
+        padding: 0 30px;
+    }
+
+    .machine-learning-projects .container-mlp{
+        padding: 0 30px;
+    }
+
+    .webdev-projects .container-wdp{
+        padding: 0 30px;
+    }
+}
+
+
+
+
+
+
+/* Para celulares*/
+@media(max-width: 425px){
+    
+    
+    html{
+        color: white;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background-color: rgb(27, 25, 25);
+        font-family: "Poppins", sans-serif;
+        margin: 0 auto;
+        max-width: 1120px;
+    }
+
+
+
+
+
+    .main-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 15px;
+    }
+
+    .main-header .logo1{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        text-decoration: underline;
+        text-align: center;
+        line-height: 43px;
+        font-family: sans-serif;
+        transition: 0.2s;
+    }
+
+    .main-header a:hover .logo1{
+        color: rgb(9, 99, 17);
+        border: 2px solid rgb(9, 99, 17);
+    }
+
+
+
+
+
+    .home{
+        display: flex;
+        min-height: calc(100vh - 132px); /*!!!*/
+        align-items: center;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    .home .general-informations{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        letter-spacing: 2px;
+        padding: 0 15px;
+        max-width: 50%;
+    }
+
+    .home .general-informations h1{
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .home .general-informations p{
+        font-family: "Nanum Gothic", sans-serif;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+
+
+
+
+
+    .home .social-media{
+        display: flex;
+        gap: 20px;
+    }
+
+    .home .social-media a i{
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding: 6px;
+        text-align: center;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+    .home .social-media a i:hover{
+        color: rgb(9, 99, 17);
+        border: 1px dashed rgb(9, 99, 17);
+        transform: scale(1.2);
+    }
+
+
+
+
+
+    .home .container-my-picture .my-picture{
+        width: 200px;
+        max-width: 450px;
+        border-radius: 20%;
+    }
+
+    .home .container-my-picture img{
+        width: 100%;
+        border-radius: 20%;
+    }
+
+    .home .shadow{
+        background: linear-gradient(to left, #69be7f, #166439, #11221d);
+    }
+
+    .top{
+        text-align: center;
+        padding: 40px 0;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: lowercase;
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+
+
+
+
+    /*---------------------------*/
+    .statistical-analysis-projects{
+        padding: 20px 0;
+        max-height: 50350px;
+        /*
+        modificar a altura máxima sempre que inserir mais projetos!
+        */
+    }
+
+    .statistical-analysis-projects .title-top-sap{
+        display: flex;
+        gap: 10%;
+        padding: 10px;
+    }
+
+    .statistical-analysis-projects .top{
+        align-items: center;
+        
+    }
+
+    .statistical-analysis-projects .title-sap{
+        text-align: left;
+        padding: 32px 0;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'Nanum Gothic', sans-serif;
+        width: 900px;
+    }
+
+    .statistical-analysis-projects .container-sap{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .statistical-analysis-projects .container-sap h3{
+        font-size: 10px;
+    }
+
+    .statistical-analysis-projects .container-sap p{
+        font-size: 10px;
+    }
+
+    .statistical-analysis-projects .container-sap .project{
+        max-width: 160px;
+        max-height: 240px;
+        position: relative;
+        display: none;
+    }
+
+    .statistical-analysis-projects .container-sap .project.active{
+        display: block;
+    }
+
+    .statistical-analysis-projects .container-sap .project.show{
+        display: block;
+    }
+
+
+    .statistical-analysis-projects .container-sap img{
+        height: 80%;
+    }
+
+    .statistical-analysis-projects .container-sap h3{
+        background-color: black;
+        width: 80%;
+        padding: 25px 0 10px 20px;
+        position: absolute;
+        bottom: 0;
+        font-size: 10px;
+    }
+
+    .statistical-analysis-projects .container-sap .project-information-sap{
+        background-color: black;
+        position: absolute;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        font-weight: 600;
+        opacity: 0;
+        transition: 0.3s;
+        padding: 20px;
+    }
+
+    .statistical-analysis-projects .container-sap .project-information-sap{
+        opacity: 0.7;
+        background-color: black;
+    }
+
+    .statistical-analysis-projects .btn-sap-show-more{
+        background: none;
+        border: 1px solid white;
+        border-radius: 15%;
+        color: white;
+        width: 90px;
+        height: 50px;
+        padding: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 50px auto;
+    }
+
+    .statistical-analysis-projects .btn-sap-show-less{
+        background: none;
+        border: 1px solid white;
+        border-radius: 15%;
+        color: white;
+        width: 90px;
+        height: 50px;
+        padding: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 50px auto;
+    }
+
+    .statistical-analysis-projects .container-btn-sap{
+        display: flex;
+    }
+    /*---------------------------*/
+
+
+
+
+
+    /*---------------------------*/
+    .machine-learning-projects{
+        padding: 20px 0;
+        max-height: 50350px;
+        /*
+        modificar a altura máxima sempre que inserir mais projetos!
+        */
+    }
+
+    .machine-learning-projects .title-top-mlp{
+        display: flex;
+        gap: 10%;
+        padding: 10px;
+    }
+
+    .machine-learning-projects .top{
+        align-items: center;
+        
+    }
+
+    .machine-learning-projects .title-mlp{
+        text-align: left;
+        padding: 32px 0;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'Nanum Gothic', sans-serif;
+        width: 900px;
+    }
+
+    .machine-learning-projects .container-mlp{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .machine-learning-projects .container-mlp h3{
+        font-size: 10px;
+    }
+
+    .machine-learning-projects .container-mlp p{
+        font-size: 10px;
+    }
+
+    .machine-learning-projects .container-mlp .project{
+        max-width: 160px;
+        max-height: 240px;
+        position: relative;
+        display: none;
+    }
+
+    .machine-learning-projects .container-mlp .project.active{
+        display: block;
+    }
+
+    .machine-learning-projects .container-mlp .project.show{
+        display: block;
+    }
+
+
+    .machine-learning-projects .container-mlp img{
+        height: 80%;
+    }
+
+    .machine-learning-projects .container-mlp h3{
+        background-color: black;
+        width: 80%;
+        padding: 25px 0 10px 20px;
+        position: absolute;
+        bottom: 0;
+        font-size: 10px;
+    }
+
+    .machine-learning-projects .container-mlp .project-information-mlp{
+        background-color: black;
+        position: absolute;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        font-weight: 600;
+        opacity: 0;
+        transition: 0.3s;
+        padding: 20px;
+    }
+
+    .machine-learning-projects .container-mlp .project-information-mlp{
+        opacity: 0.7;
+        background-color: black;
+    }
+
+    .machine-learning-projects .btn-mlp-show-more{
+        background: none;
+        border: 1px solid white;
+        border-radius: 15%;
+        color: white;
+        width: 90px;
+        height: 50px;
+        padding: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 50px auto;
+    }
+
+    .machine-learning-projects .btn-mlp-show-less{
+        background: none;
+        border: 1px solid white;
+        border-radius: 15%;
+        color: white;
+        width: 90px;
+        height: 50px;
+        padding: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 50px auto;
+    }
+
+    .machine-learning-projects .container-btn-mlp{
+        display: flex;
+    }
+    /*---------------------------*/
+
+
+
+
+
+    /*---------------------------*/
+    .webdev-projects{
+        padding: 20px 0;
+        max-height: 50350px;
+        /*
+        modificar a altura máxima sempre que inserir mais projetos!
+        */
+    }
+
+    .webdev-projects .title-top-wdp{
+        display: flex;
+        gap: 10%;
+        padding: 10px;
+    }
+
+    .webdev-projects .top{
+        align-items: center;
+        
+    }
+
+    .webdev-projects .title-wdp{
+        text-align: left;
+        padding: 32px 0;
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-family: 'Nanum Gothic', sans-serif;
+        width: 900px;
+    }
+
+    .webdev-projects .container-wdp{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .webdev-projects .container-wdp h3{
+        font-size: 10px;
+    }
+
+    .webdev-projects .container-wdp p{
+        font-size: 10px;
+    }
+
+    .webdev-projects .container-wdp .project{
+        max-width: 160px;
+        max-height: 240px;
+        position: relative;
+        display: none;
+    }
+
+    .webdev-projects .container-wdp .project.active{
+        display: block;
+    }
+
+    .webdev-projects .container-wdp .project.show{
+        display: block;
+    }
+
+
+    .webdev-projects .container-wdp img{
+        height: 80%;
+    }
+
+    .webdev-projects .container-wdp h3{
+        background-color: black;
+        width: 80%;
+        padding: 25px 0 10px 20px;
+        position: absolute;
+        bottom: 0;
+        font-size: 10px;
+    }
+
+    .webdev-projects .container-wdp .project-information-wdp{
+        background-color: black;
+        position: absolute;
+        top: 0;
+        width: 80%;
+        height: 100%;
+        font-weight: 600;
+        opacity: 0;
+        transition: 0.3s;
+        padding: 20px;
+    }
+
+    .webdev-projects .container-wdp .project-information-wdp{
+        opacity: 0.7;
+        background-color: black;
+    }
+
+    .webdev-projects .btn-wdp-show-more{
+        background: none;
+        border: 1px solid white;
+        border-radius: 15%;
+        color: white;
+        width: 90px;
+        height: 50px;
+        padding: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 50px auto;
+    }
+
+    .webdev-projects .btn-wdp-show-less{
+        background: none;
+        border: 1px solid white;
+        border-radius: 15%;
+        color: white;
+        width: 90px;
+        height: 50px;
+        padding: 20px;
+        font-size: 10px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin: 50px auto;
+    }
+
+    .webdev-projects .container-btn-wdp{
+        display: flex;
+    }
+    /*---------------------------*/
+}
